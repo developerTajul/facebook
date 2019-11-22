@@ -1,0 +1,100 @@
+body {
+	margin: 0;
+
+}
+*{
+	box-sizing: border-box;
+}
+.container{
+	width: 90%;
+	margin: auto;
+}
+
+.header-area{
+	background: #3C5A99;
+	padding: 10px 0;
+}
+
+.header-area .logo-area{
+	width: 30%;
+	float: left;
+}
+.header-area .login-area{
+	overflow: hidden;
+	width: 70%
+}
+
+.header-area .login-area form {
+	width: 400px;
+	float: right;
+}
+.login-area label, .login-area input{
+	display: block;
+}
+
+.login-area input[type="checkbox"] {
+	float: left;
+	margin-left: 0;
+}
+
+.login-area .user-area{
+	float: left;
+	margin-right: 15px;
+}
+.login-area .password-area{
+	overflow: hidden;
+	float: left;
+	margin-right: 15px;
+}
+.login-area label, .password-area a {
+	color: #fff;
+	text-decoration: none;
+}
+.login-area .submit-area {
+	overflow: hidden;
+	float: left;
+	margin-top: 17px;
+}
+
+
+@media all and (max-width: 768px){
+
+	.header-area .logo-area {
+		float: none;
+		margin-bottom: 20px;
+		width: 100%;
+		text-align: center;
+	}
+
+
+	.header-area .login-area {
+		width: 100%;
+	}
+
+	.header-area .login-area form {
+		width: 400px;
+		float: none;
+		margin: auto;
+	}
+
+}
+
+
+@media all and (max-width: 500px){
+	.header-area .login-area form {
+		width: auto;
+	}
+
+	.login-area .user-area {
+		float: none;
+	}
+
+	.login-area .password-area {
+		float: none;
+	}
+
+	.login-area input[type="text"], .login-area input[type="password"]{
+		width: 100%;
+	}
+
+}
